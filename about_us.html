@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Codemi - About Us</title>
+</head>
+<body>
+    <!-- Reserve space for the fixed navigation bar -->
+    <div id="navbar-placeholder" style="height: 80px;"></div>
+
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Main content styles */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Section styles */
+        section {
+            margin-bottom: 20px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Media query for responsiveness */
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 10px;
+            }
+
+            main {
+                padding: 10px;
+            }
+        }
+    </style>
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About HKR Trainings</h2>
+            <p>
+                HKR Trainings excel at providing you the best online classes with high-quality facilities at a low price without any compromise on quality. What can you expect from us? A dedicated learning platform with 24*7 support, best in class training materials to help you learn advance techniques and practical knowledge of all IT Technologies.
+            </p>
+            <p>
+                Our courses are specifically curated for both professionals as well as job-seekers. Online classes conducted by the best knowledgeable and certified trainers help you earn certification at your convenience.
+            </p>
+        </section>
+    </main>
+
+    <!-- Include the footer using JavaScript -->
+    <script>
+        var footerContainer = document.createElement("div");
+        footerContainer.load("footer.html", function() {
+            // Callback function when the footer is loaded
+            document.body.appendChild(footerContainer);
+        });
+    </script>
+</body>
+</html>

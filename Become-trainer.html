@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become an Instructor at HKR Trainings</title>
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: rgba(27,24,52,255);
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .logo img {
+            width: 180px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        /* Search bar styles */
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 40px;
+            width: 300px;
+        }
+
+        /* Main content styles */
+        .content {
+            padding: 60px;
+        }
+        .content p{
+            line-height: 1.5;
+            padding-left: 20px;
+    
+        }
+        .content li{
+            line-height: 1.5;
+        }
+
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .search-bar {
+                margin-top: 10px;
+                width: 300px;
+                height: 40px;
+            }
+
+            .search-input {
+                width: 140%;
+                margin-right: 0;
+                height: 20px;
+            }
+            
+            
+            .content h1 {
+                position: left;
+                font-size: 25px;
+                margin-left: -35px;
+            }
+            .content p{
+                margin-left: -38px;
+                width: 120%;
+            }
+            .content h2{
+                margin-left: -35px;
+            }
+            .content ul{
+                margin-left: -47px;
+                
+            }
+            .content ul li{
+                padding-top: 10px;
+                width: 120%;
+            }
+        }
+        .container-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h4 {
+            text-align: center;
+            color: #d2691e;
+            margin-bottom: 20px;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            margin-left: -10px;
+            padding-right: 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+    
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d2691e;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="file"] {
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #d2691e;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Search...">
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content">
+        <h1>Become an Instructor at Skill Codemi</h1>
+        <p>
+            Unlock your potential and share your expertise by becoming an instructor at Skill Codemi. Join our dynamic team of educators and empower<br> learners worldwide.As a Skill Codemi instructor, you can showcase your knowledge, 
+            expand your reach, and shape the future of learners across<br> diverse domains, all while enjoying a rewarding teaching experience.
+            Join us in revolutionizing online education, gain recognition for your expertise,<br> and make a significant impact on the professional 
+            growth of individuals seeking to acquire new skills and knowledge.
+        </p>
+
+        <h2>What do we expect from you?</h2>
+        <ul>
+            <li>   We expect you to bring detailed practical knowledge and a passion for your domain</li>
+            <li>   Your unparalleled zeal for sharing your knowledge and a commitment
+                 to <br>delivering the best learning experiences to your students.</li>
+            <li>  complex ideas in a way that's easy for learners to understand and engage with.</li>
+        </ul>
+
+        <h2>Why Skill Codemi only..</h2>
+        <ul>
+            <li>We have got passionate professional trainers worldwide who stood with us in drafting <br>
+                careers of around five lakh happy trainees.</li>
+            <li>We are offering freelancing Opportunities.You can provide job support to candidates and get paid for your work</li>
+            <li>we will schedule the sessions based on your availability only</li>
+        </ul>
+    </div>
+    <div class="container-form">
+        <h4>Register as a Trainer</h4>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Optional Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Training</title>
+    <style>
+        /* Reset some default styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        .container-image {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container-image img{
+            width:90%;
+        }
+        .centered {
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 60px;
+            color: white;
+            font-weight: bold;
+            text-shadow: 3px 3px black;
+            -webkit-text-stroke: 0.5px black;
+       
+        }
+        span{
+            font-weight: bold;
+        }
+
+        /* Main content styles */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Section styles */
+        section {
+            margin-bottom: 20px;
+            
+            
+        }
+        section h2{
+            margin-left: -150px;
+        }
+
+        /* List styles */
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-left: -130px;
+        }
+        li{
+            line-height: 1.8;
+        }
+
+        h3{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .mode-of-training{
+            display: flex;
+            max-width: 1150px;
+            flex-wrap: wrap;
+            text-align: none;
+        }
+      
+
+        /* Box styles */
+        .box {
+            border: 1px solid #ccc;
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Review slider styles */
+        .review-slider {
+            /* Implement your auto-sliding review box styles here */
+        }
+
+        /* Form styles */
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .form-container h2 {
+            color: #007BFF;
+        }
+
+        .form-container label,
+        .form-container textarea,
+        .form-container input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="tel"],
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Right image styles */
+        .right-image {
+            max-width: 100%;
+            height: auto;
+            float: right;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        .corporate-under-heading{
+            font-size: 20px;
+            text-shadow: none;
+            -webkit-text-stroke: none;
+            font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif!important;
+            font-weight: bold;
+            width: 90%;
+            padding-left: 60px;
+            
+        }
+
+        /* Media query for responsiveness */
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 10px;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            .large-image,
+            .right-image {
+                float: none;
+                margin: 0 auto;
+                display: block;
+            }
+            .centered{
+                font-size: 20px;
+                padding-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container-image">
+        <img src="heading_photo_corporate.jpg">
+        <p class="corporate-under-heading">Elevate your workforce's skills and productivity with 
+            our tailored corporate training solutions designed to meet the unique needs of your organization
+        </p>
+    </div>
+    
+    <main>
+        <section>
+            <h2>Corporate Classroom Features</h2>
+            <ul>
+                <li><span>Customized Curriculum:</span> Tailored learning paths and content to align with your organization's goals.</li>
+                <li><span>Expert Instructors:</span> Industry experts with real-world experience as trainers</li>
+                <li><span>Flexible Delivery:</span> On-site, virtual, or blended learning options to suit your team's needs.</li>
+                <li><span>Progress Tracking:</span> Monitoring and reporting tools to measure employee performance.</li>
+                <li><span>Adaptive Content:</span> Updates to keep pace with evolving industry trends.</li>
+            </ul>
+        </section>
+
+        
+    
+        <h3>Modes of Corporate Training</h3>
+        <div class="mode-of-training">
+            <div class="box">
+                <img src="box-image-1.jpg" alt="Box Image 1">
+                <h3>Mode 1</h3>
+                <p>Description for Mode 1</p>
+            </div>
+            <div class="box">
+                <img src="box-image-2.jpg" alt="Box Image 2">
+                <h3>Mode 2</h3>
+                <p>Description for Mode 2</p>
+            </div>
+            <div class="box">
+                <img src="box-image-3.jpg" alt="Box Image 3">
+                <h3>Mode 3</h3>
+                <p>Description for Mode 3</p>
+            </div>
+            <div class="box">
+                <img src="box-image-4.jpg" alt="Box Image 4">
+                <h3>Mode 4</h3>
+                <p>Description for Mode 4</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>Hear What Our Clients Say</h2>
+            <div class="review-slider">
+                <!-- Add your review boxes here (auto-sliding) -->
+            </div>
+        </section>
+
+        <section>
+            <div class="form-container">
+                <h2>Talk To Our Corporate Training Advisor</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="company">Company Name:</label>
+                    <input type="text" id="company" name="company" required>
+                    <label for="training-need">Training Need:</label>
+                    <input type="text" id="training-need" name="training-need" required>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <label for="message">Optional Message:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <!-- Right image -->
+            <img src="right-image.jpg" alt="Right Image" class="right-image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Company</p>
+    </footer>
+</body>
+</html>
