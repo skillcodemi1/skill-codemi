@@ -118,6 +118,9 @@
         white-space: nowrap
     
     }
+    .desclimer{
+        text-align: center;
+    }
 }
 .Footer-icons{
     width: 30px;
