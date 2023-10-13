@@ -640,6 +640,9 @@ footer {
         white-space: nowrap
     
     }
+    .container4 {
+        flex-direction: column;
+    }
 }
 
 a:link {
