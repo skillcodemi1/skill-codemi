@@ -216,6 +216,9 @@ h5{
         width: 100%;
         margin-bottom: 20px;
     }
+    .box h2 {
+    font-size: 20px;
+    }
 }
 .heding{
     text-align: center;
