@@ -1,0 +1,744 @@
+body, h1, ul, li, p {
+    margin: 0;
+    padding: 0;
+    font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif!important;
+    
+}
+
+/* Styles for the navigation bar */
+header {
+    background-color: rgba(27,24,52,255);
+    color:white;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(27,24,52,255);
+    height: 60px;
+
+    top:0;
+    width: 100%;
+}
+    
+
+.navbar ul{
+    height: 70px; /* Adjust the height as needed */
+    
+}
+
+.logo{
+    padding-left: 20px;
+}
+
+.logo img {
+    width: 180px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    vertical-align: middle;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    
+    
+
+}
+
+.menu li {
+    margin-right: 20px;
+    padding-left: 80px;
+    padding-top: 25px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    padding-top: 20px;
+    
+    
+}
+.search-bar input[type="text"] {
+    width: 100%;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1;
+
+    }
+    
+
+    .navbar{
+        height: 70px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    
+
+    /* Display the search icon and toggle button on mobile */
+    .menu-toggle {
+        display: block;
+        order: 1;
+        font-size: 35px;
+        padding-right: 20px;
+    }
+
+   
+
+    /* Add background color to list items when active */
+    .menu.active li {
+        background-color: rgba(27,24,52,255);
+    }
+
+}
+.search_container{
+    margin-top: 40px;
+    
+
+}
+
+.Search{
+    width: 80%;
+    max-width: 600px;
+    height: 40px;
+    border-style: solid;
+    border-color: black;
+    border:none;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    
+}
+.h1{
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-top: 40px;
+    color: black;
+    
+}
+.over{
+    padding-left: 40px;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.over p{
+    font-size: 15px;
+    padding-left: 30px;
+    
+}
+
+    
+    
+   
+
+@media (max-width: 768px) {
+    .h1{
+        font-size: 34px;
+        padding-left: 10px;
+        margin-left: 5px;
+    }
+    .over h2{
+        margin-left: -20px;
+        margin-top: -5px;
+        font-size: 20px;
+    }
+    
+    }
+    .over p{
+        width: 100%;
+        margin-left: -30px;
+        
+    }
+}
+
+
+.objects-form-container{
+    display: flex;
+    
+}
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 40px;
+    
+     
+    
+}
+.curriculum {
+    
+
+    width: 45%;
+    background-color: rgb(242, 245, 245);
+    border-radius: 15px;
+    margin-top: px;
+
+}
+
+.curriculum h3{
+    text-align: center;
+    font-size: 25px;
+    background-color: white;
+   
+}
+
+.section {
+    border: 0.5px solid #d2691e ;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: 16px;
+    font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif!important;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    margin-left: 10px;
+}
+
+.course-download{
+    margin-left: 35%;
+    width: 130px;
+    background-color: #d2691e;
+    border: none;
+    border-radius: 5px;
+    
+    height: 40px;
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .curriculum{
+       width: 100%;
+        font-size: 14px;
+        padding-left: 25px;
+
+    }
+    
+    .content ul{
+        font-size: 18px;
+
+    }
+    .content ul li{
+        font-size: 15px;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+        padding-left: 15px;
+
+        
+    }
+    .container h3{
+        font-size: 20px;
+    
+    }
+    .form-container {
+        margin-top: 10px;
+    }
+    .course-download{
+        margin-left: 30%;
+    }
+
+
+}
+
+.form-container {
+    padding: 10px;
+    border: 1px solid #d2691e;
+    border-radius: 10px;
+    width: 30%;
+    margin-left: 70px;
+    margin-top: 80px;
+    height: 500px;
+    background-color: rgb(242, 245, 245);
+}
+
+.form-container h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-container form {
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 5px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #d2691e;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #d2691e;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 42%;
+}
+
+@media (max-width: 768px) {
+
+    .form-container{
+        width: 95%;
+        margin-left: 25px;
+        
+
+    }
+
+    
+    
+}
+.features_container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+
+}
+h4{
+    font-size: 25px;
+    text-decoration: underline 2px solid #d2691e;
+}
+
+.features_list{
+    list-style-type: none;
+    
+}
+.features-list li {
+    display: flex;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #d2691e;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding-left: 100px;   
+    font-weight: bold; 
+    font-size: 17px;
+    padding-top:12px;
+    
+   
+}
+.features-list img{
+    width: 40px;
+    margin-top: -8px;
+}
+
+@media (max-width: 768px){
+    .features_container{
+        max-width: 90%;
+    }
+
+    .features-list li{
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+
+}
+.training_options_heading{
+    text-align: center;
+    margin-bottom: 1px;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+
+.Training_options_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    width: 20%;
+    padding: 20px;
+    border: 2px solid #ddd;
+    margin: 40px;
+    text-align: center;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+
+.box h2 {
+    font-size: 20px;
+    margin-top: -10px;
+    
+}
+
+.box ul {
+    list-style: none;
+    margin-left: -100px;
+    
+    
+}
+
+.box li {
+    margin-bottom: 5px;
+    border-left: 20px;
+    font-weight: 500;
+
+   
+   
+}
+
+.box p{
+    padding-top: 40px;
+    font-weight: bold;
+}
+
+.Dates{
+    padding-left: 90px;
+    padding-top: 15px;
+    
+}
+
+.enroll-button {
+    background-color:#d2691e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.enroll-button1 {
+    background-color:#d2691e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 150px;
+}
+
+@media (max-width: 768px){
+
+    .Training_options_container{
+        display: flex;
+        flex-direction: column;
+
+    
+    }
+    .box {
+        width: 75%;
+        margin-left: 25px;
+    }
+    
+}
+
+.Student-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 40px;
+    color: #333;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards */
+    gap: 0; /* Remove the gap between cards */
+    margin-top: 20px;
+}
+
+.review-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: calc(33.33% - 2px); /* Adjusted width and removed margin-right */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.review-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(210, 105, 30, 0.7), rgba(210, 105, 30, 0.2));
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.review-card:hover::before {
+    opacity: 1;
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.student-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: #d2691e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.student-avatar img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 50%;
+}
+
+.student-name {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+.interview_quastions{
+    padding-left: 25px;
+    text-decoration: none;
+    margin-bottom: -10px;
+}
+.container-interview-quastions{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container-interview-quastions{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.question {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.answer {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.view_more{
+    margin-left: 40%;
+    width: auto;
+    height: 30px;
+    background-color: #d2691e;
+    border: 1px solid #d2691e;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif!important
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #d2691e ;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif!important;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: hsl(0, 0%, 100%);
+}
+
+.container5 {
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.container5 p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.desclimer {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cons-foter {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.contact-details {
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex: 1;
+        margin-right: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .container5 p {
+        font-size: 15px;
+        text-align: center;
+       
+    }
+
+    .desclimer {
+        font-size: 13px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .cons-foter {
+        padding: 5px 0;
+        text-align: center;
+    }
+    .contact-details{
+        text-align: center;
+    }
+   
+    
+}

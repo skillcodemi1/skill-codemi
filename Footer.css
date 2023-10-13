@@ -1,0 +1,140 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 30px;
+}
+
+.container4 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif!important
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #d2691e ;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif!important;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: hsl(0, 0%, 100%);
+}
+
+.container5 {
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.container5 p {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.desclimer {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-container {
+    background-color: #0a0101;
+    color: #fff;
+    text-align: center;
+    
+}
+
+/* Contact information styles */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact-info-item {
+    flex: 1;
+    margin: 10px;
+    display: inline-block;
+}
+.contact-info-item p{
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+}
+.contact-info-item img{
+    width: 30px;
+    height: 30px;
+       
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 600px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-info-item  {
+        flex-direction: column;
+        flex: none;
+        
+    }
+    .contact-info-item p{
+        display: flex;
+        margin-left: 1px;
+        flex-direction: row;
+        font-size: 12px;
+        white-space: nowrap
+    
+    }
+}
+.Footer-icons{
+    width: 30px;
+    height: 25px;
+}
+a:link {
+    color: white;
+  }
+  
+  a:visited {
+    color: white ;
+  }
+  
+  a:hover {
+    color: #d2691e;
+  }
+  
+  a:link, a:visited {
+    text-decoration: none;
+  }

@@ -4,263 +4,244 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corporate Training</title>
-    <style>
-        /* Reset some default styles */
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-
-        /* Header styles */
-        .container-image {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .container-image img{
-            width:90%;
-        }
-        .centered {
-            position: absolute;
-            top:50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 60px;
-            color: white;
-            font-weight: bold;
-            text-shadow: 3px 3px black;
-            -webkit-text-stroke: 0.5px black;
-       
-        }
-        span{
-            font-weight: bold;
-        }
-
-        /* Main content styles */
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Section styles */
-        section {
-            margin-bottom: 20px;
-            
-            
-        }
-        section h2{
-            margin-left: -150px;
-        }
-
-        /* List styles */
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            margin-left: -130px;
-        }
-        li{
-            line-height: 1.8;
-        }
-
-        h3{
-            text-align: center;
-            font-size: 30px;
-        }
-
-        .mode-of-training{
-            display: flex;
-            max-width: 1150px;
-            flex-wrap: wrap;
-            text-align: none;
-        }
-      
-
-        /* Box styles */
-        .box {
-            border: 1px solid #ccc;
-            padding: 30px;
-            text-align: center;
-            margin-bottom: 20px;
-            margin-left: 20px;
-        }
-
-        .box img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Review slider styles */
-        .review-slider {
-            /* Implement your auto-sliding review box styles here */
-        }
-
-        /* Form styles */
-        .form-container {
-            max-width: 400px;
-            margin: 0 auto;
-            background-color: #f5f5f5;
-            padding: 20px;
-            border-radius: 5px;
-        }
-
-        .form-container h2 {
-            color: #007BFF;
-        }
-
-        .form-container label,
-        .form-container textarea,
-        .form-container input {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        .form-container input[type="text"],
-        .form-container input[type="email"],
-        .form-container input[type="tel"],
-        .form-container textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .form-container button[type="submit"] {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* Right image styles */
-        .right-image {
-            max-width: 100%;
-            height: auto;
-            float: right;
-        }
-
-        /* Footer styles */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-        .corporate-under-heading{
-            font-size: 20px;
-            text-shadow: none;
-            -webkit-text-stroke: none;
-            font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif!important;
-            font-weight: bold;
-            width: 90%;
-            padding-left: 60px;
-            
-        }
-
-        /* Media query for responsiveness */
-        @media screen and (max-width: 768px) {
-            header {
-                padding: 10px;
-            }
-
-            main {
-                padding: 10px;
-            }
-
-            .large-image,
-            .right-image {
-                float: none;
-                margin: 0 auto;
-                display: block;
-            }
-            .centered{
-                font-size: 20px;
-                padding-top: 10px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="corporate.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
 </head>
 <body>
-    
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="logo.png" alt="Logo"></div>
+            <ul class="menu">
+                <li><a href="#" onclick="showAdvisorForm(); return false;">Connect with learning advisor</a></li>
+                <li><a href="corporate_training.html">Corporate Training</a></li>
+                <li><a href="Become-trainer.html">Become an instructor</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
 
-    <div class="container-image">
-        <img src="heading_photo_corporate.jpg">
-        <p class="corporate-under-heading">Elevate your workforce's skills and productivity with 
-            our tailored corporate training solutions designed to meet the unique needs of your organization
+            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>   
+        </div>
+
+        <div class="search_container">
+            <input type="text" placeholder="Search Course.. or keyWord.." name="Search" class="Search">
+        </div>
+    </header>
+    <div class="corporate-heading">
+        <h2>Corporate Training</h2>
+        <p>Elevate your workforce's skills and productivity with our tailored corporate 
+            training solutions designed to meet the unique needs of your organization</p>
+    </div>
+
+    <div class="Training-employees">
+        <h1>Training for Employees</h1>
+        <p>
+            we will help you learn anytime, anywhere with easily accessible online training. Experience immersive 
+            learning and equip your teams with the skills of tomorrow.We deliver the right skills to the aspirant from 
+            day one that meets today's business requirements. It also helps to increase the productivity of the employee. 
         </p>
     </div>
-    
-    <main>
-        <section>
-            <h2>Corporate Classroom Features</h2>
-            <ul>
-                <li><span>Customized Curriculum:</span> Tailored learning paths and content to align with your organization's goals.</li>
-                <li><span>Expert Instructors:</span> Industry experts with real-world experience as trainers</li>
-                <li><span>Flexible Delivery:</span> On-site, virtual, or blended learning options to suit your team's needs.</li>
-                <li><span>Progress Tracking:</span> Monitoring and reporting tools to measure employee performance.</li>
-                <li><span>Adaptive Content:</span> Updates to keep pace with evolving industry trends.</li>
-            </ul>
-        </section>
-
+    <h3> Training Features</h3>
+    <div class="features-body">
         
-    
-        <h3>Modes of Corporate Training</h3>
-        <div class="mode-of-training">
-            <div class="box">
-                <img src="box-image-1.jpg" alt="Box Image 1">
-                <h3>Mode 1</h3>
-                <p>Description for Mode 1</p>
-            </div>
-            <div class="box">
-                <img src="box-image-2.jpg" alt="Box Image 2">
-                <h3>Mode 2</h3>
-                <p>Description for Mode 2</p>
-            </div>
-            <div class="box">
-                <img src="box-image-3.jpg" alt="Box Image 3">
-                <h3>Mode 3</h3>
-                <p>Description for Mode 3</p>
-            </div>
-            <div class="box">
-                <img src="box-image-4.jpg" alt="Box Image 4">
-                <h3>Mode 4</h3>
-                <p>Description for Mode 4</p>
+    <div class="feature-container">
+        <div class="feature-card">
+            <h2><img src="content.png" alt="">&nbsp;&nbsp;Customized Curriculum</h2>
+            <p>Tailored learning paths and content to align with your organization's goals.</p>
+        </div>
+
+        <div class="feature-card">
+            <h2><img class="feature-icons" src="icons8-coach-50.png" alt="">&nbsp;&nbsp;Expert Instructors</h2>
+            <p>Industry experts with real-world experience as trainers.</p>
+        </div>
+
+        <div class="feature-card">
+            <h2><img class="feature-icons" src="icons8-office-50.png" alt="">&nbsp;&nbsp;Flexible Delivery</h2>
+            <p>On-site, virtual, or blended learning options to suit your team's needs.</p>
+        </div>
+
+        <div class="feature-card">
+            <h2><img class="feature-icons"  src="icons8-progress-50.png" alt="">&nbsp;&nbsp;Progress Tracking</h2>
+            <p>Monitoring and reporting tools to measure employee performance.</p>
+        </div>
+
+        <div class="feature-card">
+            <h2><img class="feature-icons" src="icons8-progress-50 (1).png" alt="">&nbsp;&nbsp;Adaptive Content</h2>
+            <p>Updates to keep pace with evolving industry trends.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="Modes_heading">
+        <h3>Modes Designed for all your business needs</h3>
+    </div>
+    <div class="Training_options_container">
+        <div class="box">
+            <h2>Instructor-Led Live, Online Training</h2>
+            <img src="online_training.png" alt="">
+            <div>
+            <button class="enroll-button1">Enroll Now</button>
             </div>
         </div>
 
-        <section>
-            <h2>Hear What Our Clients Say</h2>
-            <div class="review-slider">
-                <!-- Add your review boxes here (auto-sliding) -->
-            </div>
-        </section>
 
-        <section>
-            <div class="form-container">
-                <h2>Talk To Our Corporate Training Advisor</h2>
-                <form>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="company">Company Name:</label>
-                    <input type="text" id="company" name="company" required>
-                    <label for="training-need">Training Need:</label>
-                    <input type="text" id="training-need" name="training-need" required>
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                    <label for="message">Optional Message:</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
-                    <button type="submit">Submit</button>
-                </form>
+        <div class="box">
+            <h2> Skill Codemi,Class Room Training</h2>
+            <img src="classroom.jpg">
+            <div>
+            <button class="enroll-button1">Enroll Now</button>
             </div>
-            <!-- Right image -->
-            <img src="right-image.jpg" alt="Right Image" class="right-image">
-        </section>
-    </main>
+        </div>
 
-    <footer>
-        <p>&copy; 2023 Your Company</p>
-    </footer>
+    </div>
+</div>
+<h2 class="Student-heading">What our clientts say</h2>
+<div class="reviews-container">
+    <div class="review-card">
+        <div class="student-avatar">
+            <img src="handshake (1).png" alt="Student 1">
+        </div>
+        <div class="student-info">
+            <span class="student-name">John Doe</span>
+            <p class="review-text">
+                "CyberArk Training exceeded my expectations. The instructors are experts in their field, and the hands-on experience 
+                I gained was invaluable. 
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="student-avatar">
+            <img src="handshake (1).png" alt="Student 2">
+        </div>
+        <div class="student-info">
+            <span class="student-name">Jane Smith</span>
+            <p class="review-text">
+                I took the CyberArk Training course, and I couldn't be happier with the results. The training materials are well-structured, and the support from the instructors and the community is outstanding.
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="student-avatar">
+            <img src="handshake (1).png" alt="Student 3">
+        </div>
+        <div class="student-info">
+            <span class="student-name">Alice Johnson</span>
+            <p class="review-text">
+                "CyberArk Training provided me with a strong foundation in privileged access management and cybersecurity. The program's flexibility, along with the quality of instruction, made the learning experience exceptional.
+
+
+            </p>
+        </div>
+    </div>
+    </div>
+    <div class="img-form">
+        <div>
+            <img src="companies-imgjpg.jpg">
+        </div>
+        <div class="form-container">
+            <h2>Talk To Our Corporate Training Advisor</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company" required>
+                <label for="training-need">Training Need:</label>
+                <input type="text" id="training-need" name="training-need" required>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="message">Optional Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container4">
+            <div class="footer-section">
+                <h2> Certification Courses</h2>
+                <ul>
+                    <li><a href="salesforce.html">Salesforce Certification Training</li></a>
+                    <li><a href="mulesoft.html">Mulesoft Certification Training</li></a>
+                    <li>Python Certification Training</li>
+                    <li>Data Science Certification Training</li>
+                    <li><a href=""aws_devops> Aws Certification Training</li></a>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h2>Trending Courses</h2>
+                <ul>
+                    <li><a href="workday.html">Wokrday traning </li></a>
+                    <li><a href="snowflake.html">snowflake Training</li></a>
+                    <li><a href="kronos.html">Kronos Training</li></a>
+                    <li><a href="salesforce.html">Salesforce vlocity</li></a>
+                    <li>Tableau Training
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h2>Trending Courses</h2>
+                <ul>
+                    <li><a href="cyberArk.html">Cyberark Training</li></a>
+                    <li>Altreyx Training</li>
+                    <li><a href="servicenow.html">ServiceNow Training</li></a>
+                    <li><a href="golang.html">GoLang Training</li></a>
+            
+                </ul>
+            </div>
+        
+    
+            <div class="footer-section">
+                <h2>Work With Us</h2>
+                <ul>
+                    <li>Job Opportunities</li>
+                    <li>Career Growth</li>
+                    <li>Internships</li>
+                    <li>write for us</li>
+                    <li>Become an Instructor at HKR Trainings</li>
+                </ul>
+            </div>
+            
+        </div>
+    
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    
+        <div class="container5">
+            <p>
+                About Us | Contact Us | Blogs | Webinars | Tutorials | Sample Resumes | Interview Questions | Privacy Policy | Terms & Conditions | Refund Policy | Technical Support | Mock Interviews
+            </p>
+            <p>©2023 Skill Codemi. All rights Reserved.</p>
+        </div>
+    
+    
+    <p class="desclimer">DISCLAIMER:
+        On Our Website all Courses, Technologies, logos, and certification titles we use are their respective owners' property, Trademarks & their intellectual Property belong to them. All the firm, service, or product names on our website are solely for identification purposes. We do not own, endorse or have the copyright of any brand/logo/name in any manner. Few graphics on our website are freely available on public domains. we use all these just for the purpose of training only.</p>
+    </div>
+    
+    <div class="contact-container ">
+        <div class="contact-info">
+            <div class="contact-info-item">
+                <p>Contact Details:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="united-states-of-america.png" alt="Phone Icon"><a href="tel:+918367595861">+1 8367595861 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><img src="india.png" alt="Phone Icon"><a href="tel:+918367595861">+91 8367595861</p></a>
+            </div>
+            <div class="contact-info-item">
+                <p1>E-mail:<a href="https://mail.google.com/mail/?view=cm&fs=1&to=youremail@gmail.com" target="_blank">sales@skillcodemi.com </a></p1>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script>
+    // JavaScript to toggle the mobile menu
+   
+
+    // JavaScript to toggle the menu on mobile
+    function toggleMenu() {
+    const menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+</script>
 </html>
