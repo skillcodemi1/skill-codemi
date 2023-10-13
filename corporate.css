@@ -620,6 +620,9 @@ footer {
     height: 30px;
        
 }
+.desclimer{
+    text-align: center;
+}
 
 /* Media query for responsiveness */
 @media screen and (max-width: 600px) {
@@ -642,9 +645,6 @@ footer {
     }
     .container4 {
         flex-direction: column;
-    }
-    .desclimer{
-        text-align: center;
     }
 }
 
