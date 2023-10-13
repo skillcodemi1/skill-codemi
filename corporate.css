@@ -643,6 +643,9 @@ footer {
     .container4 {
         flex-direction: column;
     }
+    .desclimer{
+        text-align: center;
+    }
 }
 
 a:link {
