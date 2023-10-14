@@ -292,6 +292,7 @@ h5{
         flex: none;
         width: 200px;
         margin-left: 15px;
+        align-items: center;
         
     }
     .Choose-learning-heading{
