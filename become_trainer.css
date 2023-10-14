@@ -79,6 +79,7 @@ body {
         position: left;
         font-size: 25px;
         margin-left: -35px;
+        padding-top: 50px;
     }
     .content p{
         margin-left: -38px;
@@ -279,6 +280,12 @@ button:hover {
         font-size: 12px;
         white-space: nowrap
     
+    }
+    .container4{
+        flex-direction: column;
+    }
+    .desclimer{
+        text-align: center;
     }
 }
 .Footer-icons{
