@@ -292,7 +292,7 @@ h5{
         flex: none;
         width: 200px;
         margin-left: 15px;
-        align-items: center;
+        padding-left: 8%;
         
     }
     .Choose-learning-heading{
@@ -301,6 +301,9 @@ h5{
     }
     .hidden-text{
         width: 300px;
+    }
+    .hidden-buttons h3{
+        font-size: 20px;
     }
 
 }
