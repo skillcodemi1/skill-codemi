@@ -958,6 +958,8 @@ a:link {
   a:link, a:visited {
     text-decoration: none;
   }
+  a {
+    -webkit-tap-highlight-color: transparent;
 
 .Footer-icons{
     width: 30px;
