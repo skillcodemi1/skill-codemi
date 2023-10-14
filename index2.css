@@ -478,15 +478,20 @@ h5{
         max-width: 300px;
     }
     .Comp-image{
+        margin-top: -20px;
         padding-left: 20px;
-        width: 260px;
-        
-        
+        width: 80%;    
         
     }
     .Allc1{
         margin-left: 200px;
         
+    }
+    .Enter{
+        font-size: 22px;
+    }
+    .improve{
+        font-size: 15px;
     }
 
 }
